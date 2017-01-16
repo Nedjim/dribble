@@ -1,0 +1,16 @@
+header {
+    background: $greyDark;
+    color: $white;
+    .dropdown a {
+        color: $greyMedium;
+    }
+    .dropdown-content {
+        background: $opacityGrey;
+    }
+}
+
+.dropdown-content {
+    a {
+        font-size: 1rem;
+    }
+}

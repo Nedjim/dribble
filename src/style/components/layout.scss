@@ -1,0 +1,35 @@
+/*DROPDOWN*/
+
+.full-width {
+    width: 100%;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.dropdown {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 10rem;
+    padding: 2.5rem 0.5rem 0.5rem 0.5rem;
+    @include border-radius(0.5rem);
+}
+
+.dropdown-content a {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header {
+    height: 8vh;
+    padding-top: 1.5rem;
+}
