@@ -3,7 +3,10 @@ import React from 'react';
 export default class Header extends React.Component {
     render() {
         return (
-            <header class="full-width">
+            <header className="full-width">
+
+                    <img id="logo" src="../../img/dribbble.png" alt="" />
+
                             <div className="dropdown">
                                 <div className="dropdown-btn">Shots</div>
                                 <div className="dropdown-content">
@@ -20,7 +23,7 @@ export default class Header extends React.Component {
                             </div>
 
                             <div className="dropdown">
-                                <div className="dropdown-Btn">Designers</div>
+                                <div className="dropdown-btn">Designers</div>
                                 <div className="dropdown-content">
                                     <a href="#">All</a>
                                     <a href="#">For hire</a>
@@ -29,7 +32,7 @@ export default class Header extends React.Component {
                             </div>
 
                             <div className="dropdown">
-                                <div className="dropdown-Btn">Teams</div>
+                                <div className="dropdown-btn">Teams</div>
                                 <div className="dropdown-content">
                                     <a href="#">All</a>
                                     <a href="#">Hiring designers</a>
@@ -39,7 +42,7 @@ export default class Header extends React.Component {
                             </div>
 
                             <div className="dropdown">
-                                <div className="dropdown-Btn">Community</div>
+                                <div className="dropdown-btn">Community</div>
                                 <div className="dropdown-content">
                                     <a href="#">Places</a>
                                     <a href="#">Meetups</a>
@@ -50,7 +53,7 @@ export default class Header extends React.Component {
                             </div>
 
                             <div className="dropdown">
-                                <div className="dropdown-Btn">Jobs</div>
+                                <div className="dropdown-btn">Jobs</div>
                                 <div className="dropdown-content">
                                     <a href="#">All</a>
                                     <a href="#">Remote / Anywhere</a>
@@ -60,7 +63,7 @@ export default class Header extends React.Component {
                             </div>
 
                             <div className="dropdown">
-                                <div className="dropdown-Btn">...</div>
+                                <div className="dropdown-btn">...</div>
                                 <div className="dropdown-content">
                                     <a href="#">About</a>
                                     <a href="#">Shop</a>
@@ -73,6 +76,16 @@ export default class Header extends React.Component {
                                     <a href="#">Facebook</a>
                                     <a href="#">Integrations</a>
                                 </div>
+                            </div>
+
+                            <div className="login inline-block">
+                                <span className="sign">
+                                    <a>Sign up</a>
+                                </span>
+                                <span className="sign">
+                                    <a>Sign in</a>
+                                </span>
+                                <input type="text" placeholder="Search" />
                             </div>
 
             </header>

@@ -1,16 +1,38 @@
-header {
-    background: $greyDark;
-    color: $white;
-    .dropdown a {
-        color: $greyMedium;
+/*--------------------------------FONTS--------------------------*/
+
+body {
+    font-family: $font;
+    .dropdown-btn,
+    .sign {
+        font-size: 0.9rem;
     }
     .dropdown-content {
-        background: $opacityGrey;
+        a {
+            font-size: 0.85rem;
+        }
     }
 }
 
-.dropdown-content {
-    a {
-        font-size: 1rem;
+
+/*--------------------------------COLORS-------------------------*/
+
+header {
+    background: $greyDark;
+    color: $white;
+    .dropdown,
+    .sign {
+        color: $greyLight;
+    }
+    .dropdown:hover,
+    .sign:hover {
+        color: $greyWhite;
+    }
+    .dropdown {
+        .dropdown-content {
+            background: $opacityGrey;
+            a {
+                color: $greyMedium;
+            }
+        }
     }
 }

@@ -1,5 +1,3 @@
-/*DROPDOWN*/
-
 .full-width {
     width: 100%;
 }
@@ -8,6 +6,25 @@
     display: inline-block;
 }
 
+.absolute {
+    position: absolute;
+}
+
+
+/*----------------------------HEADER--------------------------------*/
+
+header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#logo {
+    width: 5rem;
+}
+
+
+/*----------------------------DROPDOWN------------------------------*/
+
 .dropdown {
     display: inline-block;
     margin-right: 2rem;
@@ -15,21 +32,27 @@
 
 .dropdown-content {
     display: none;
-    position: absolute;
     width: 10rem;
-    padding: 2.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
     @include border-radius(0.5rem);
+    @extend .absolute;
 }
 
-.dropdown-content a {
-    display: block;
-}
-
+.dropdown-content a,
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-header {
-    height: 8vh;
-    padding-top: 1.5rem;
+.dropdown-content a {
+    margin-top: 0.8rem;
+}
+
+.login {
+    float: right;
+    margin-top: 1rem;
+    span,
+    input {
+        margin-right: 2rem;
+        @include border-radius(0.2rem);
+    }
 }
