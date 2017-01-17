@@ -1,7 +1,3 @@
-.full-width {
-    width: 100%;
-}
-
 .inline-block {
     display: inline-block;
 }
@@ -14,12 +10,14 @@
 /*----------------------------HEADER--------------------------------*/
 
 header {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
 }
 
 #logo {
-    width: 5rem;
+    width: 6rem;
+    margin-right: 2rem;
+    margin-left: 1rem;
 }
 
 
@@ -47,12 +45,19 @@ header {
     margin-top: 0.8rem;
 }
 
+
+/*-------------------------LOGIN--------------------------*/
+
 .login {
     float: right;
-    margin-top: 1rem;
     span,
     input {
         margin-right: 2rem;
         @include border-radius(0.2rem);
     }
+}
+
+#menu,
+#sign {
+    margin-top: 1rem;
 }
