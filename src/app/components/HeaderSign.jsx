@@ -10,7 +10,10 @@ export default class HeaderSign extends React.Component {
                 <span className="sign">
                     <a>Sign in</a>
                 </span>
-                <input type="text" placeholder="Search" />
+                <div>
+                    <img src="../../img/search.png" class="search-icone" />
+                    <input type="text" placeholder="Search" />
+                </div>
             </div>
         );
     }

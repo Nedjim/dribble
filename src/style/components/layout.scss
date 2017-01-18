@@ -53,6 +53,7 @@ header {
     span,
     input {
         margin-right: 2rem;
+        border: none;
         @include border-radius(0.2rem);
     }
 }
@@ -60,4 +61,28 @@ header {
 #menu,
 #sign {
     margin-top: 1rem;
+}
+
+.search-icone {
+    width: 0.5rem;
+}
+
+
+/*---------------------NAVIGATION------------------------*/
+
+#nav {
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.button {
+    padding: 0.8rem 0.5rem 0.8rem;
+    margin-right: 0.3rem;
+    font-size: 0.8rem;
+    @include border-radius(0.4rem);
+}
+
+.button:first-child {
+    margin-left: 1rem
 }
