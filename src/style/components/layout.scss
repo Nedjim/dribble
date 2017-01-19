@@ -53,6 +53,7 @@ header {
     span,
     input {
         margin-right: 2rem;
+        padding: 0.3rem;
         border: none;
         @include border-radius(0.2rem);
     }
@@ -72,8 +73,7 @@ header {
 
 #nav {
     text-align: center;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding: 1.8rem 0 1.8rem 0;
 }
 
 .button {

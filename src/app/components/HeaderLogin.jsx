@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class HeaderSign extends React.Component {
+export default class HeaderLogin extends React.Component {
     render() {
         return (
             <div>
@@ -10,10 +10,7 @@ export default class HeaderSign extends React.Component {
                 <span className="sign">
                     <a>Sign in</a>
                 </span>
-                <div>
-                    <img src="../../img/search.png" class="search-icone" />
-                    <input type="text" placeholder="Search" />
-                </div>
+                <input type="text" placeholder="Search" />
             </div>
         );
     }
