@@ -1,5 +1,4 @@
 import React from 'react';
-import ElementsMenu from './ElementsMenu.jsx';
 import Shots from '../Nav/Shots.jsx';
 import Designers from '../Nav/Designers.jsx';
 import Teams from '../Nav/Teams.jsx';

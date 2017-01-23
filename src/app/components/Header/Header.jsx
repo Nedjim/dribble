@@ -1,6 +1,6 @@
 import React from 'react';
-import HeaderMenu from './HeaderMenu.jsx';
-import HeaderLogin from './HeaderLogin.jsx';
+import Menu from './Menu.jsx';
+import Login from './Login.jsx';
 
 export default class Header extends React.Component {
     render() {
@@ -8,10 +8,10 @@ export default class Header extends React.Component {
             <header>
                 <img id="logo" src="../../img/dribbble.png" className="inline-block"/>
                 <div id="menu" className="inline-block absolute">
-                    <HeaderMenu />
+                    <Menu />
                 </div>
                 <div id="sign" className="login inline-block ">
-                    <HeaderLogin />
+                    <Login />
                 </div>
             </header>
         );
