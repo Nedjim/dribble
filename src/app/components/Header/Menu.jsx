@@ -1,10 +1,10 @@
 import React from 'react';
-import Shots from '../Nav/Shots.jsx';
-import Designers from '../Nav/Designers.jsx';
-import Teams from '../Nav/Teams.jsx';
-import Community from '../Nav/Community.jsx';
-import Jobs from '../Nav/Jobs.jsx';
-import Ect from '../Nav/Ect.jsx';
+import Shots from '../Dropdown/Shots.jsx';
+import Designers from '../Dropdown/Designers.jsx';
+import Teams from '../Dropdown/Teams.jsx';
+import Community from '../Dropdown/Community.jsx';
+import Jobs from '../Dropdown/Jobs.jsx';
+import Ect from '../Dropdown/Ect.jsx';
 
 export default class HeaderMenu extends React.Component {
 
