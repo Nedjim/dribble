@@ -1,6 +1,7 @@
 import React from 'react';
 import Request from 'superagent';
 import _ from 'lodash';
+import CreateElement from './CreateElement.jsx';
 
 export default class HeaderMenu extends React.Component {
 
@@ -12,6 +13,7 @@ export default class HeaderMenu extends React.Component {
     search(){
         var url = "https://api.dribbble.com/v1/shots?access_token=36474375a067aa953aa8cf6b9b68278c688ed6be4a75473f575252bfc7b5a1c7";
         Request.get(url).then((data) => {
+            console.log(data.body);
              this.setState({
                  body: data.body
              });
@@ -20,21 +22,16 @@ export default class HeaderMenu extends React.Component {
 
     render() {
         this.search();
-        var body = _.map(this.state.body, (element)=>{
+        var contents = _.map(this.state.body, (element)=>{
             return (
-                <div key={element.id}>
-                    <p>{element.title}</p>
-                    <p>{element.views_count}</p>
-                    <p>{element.comments_count}</p>
-                    <p>{element.likes_count}</p>
-                    {/*<p>{element.description}</p>*/}
-                    <p>{element.updated_at}</p>
+                <div key={element.id} className="content inline-block">
+                    <CreateElement title={element.title} viewsCount={element.views_count} commentsCount={element.comments_count} likesCount={element.likes_count} description={element.description} date={element.updated_at} image={element.images["teaser"]}/>
                 </div>
                 );
         });
         return (
-            <div>
-            {body}
+            <div id="contents">
+                {contents}
             </div>
         );
     }
