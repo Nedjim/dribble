@@ -1,0 +1,8 @@
+$!/bin/bash
+export CLIENT_ID="5531fc82e6ba130750996f2cb64f60f7fbe00e9454c33a06a2895957bae275b3"
+export CLIENT_SECRET="6ac17878aa09378e70877e5975277dbc5c36a062685b23be0d8e022746dea0ad"
+export CLIENT_ACCES_TOKEN="36474375a067aa953aa8cf6b9b68278c688ed6be4a75473f575252bfc7b5a1c7"
+export REDIRECT_URI="https://simplon-p6-proxy.herokuapp.com"
+export SCOPE="public"
+export STATE="123456"
+export CODE="31e0a77f13179e095e694cf517437f1ef8fac616a10caf07c882506f5b6e775c&state=123456"
