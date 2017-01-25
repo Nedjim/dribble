@@ -146,3 +146,31 @@ header,
         display: block;
     }
 }
+
+
+/*------------------------------------------*/
+
+#sign {
+    text-align: center;
+    margin-top: 2rem;
+    button {
+        background: $pink;
+        color: white;
+        border: none;
+        width: 35%;
+        height: 10vh;
+        font-size: 0.9rem;
+        @include border-radius(0.3rem);
+    }
+    button:hover {
+        @include contrast(90%);
+    }
+    div {
+        margin-top: 1rem;
+        color: #5c8bc0;
+        font-size: 0.9rem;
+    }
+    div:hover {
+        color: #0d47a1;
+    }
+}

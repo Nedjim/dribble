@@ -4,3 +4,9 @@
     -ms-border-radius: $radius;
     border-radius: $radius;
 }
+
+@mixin contrast($pourcent) {
+    -webkit-filter: contrast($pourcent);
+    /* Safari 6.0 - 9.0 */
+    filter: contrast($pourcent);
+}

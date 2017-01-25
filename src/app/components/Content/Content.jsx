@@ -30,7 +30,13 @@ export default class HeaderMenu extends React.Component {
         });
         return (
             <div id="contents">
-                {contents}
+                <div>
+                    {contents}
+                </div>
+                <div id="sign">
+                    <button>Sign up to continue</button>
+                    <div>or sign out</div>
+                </div>
             </div>
         );
     }

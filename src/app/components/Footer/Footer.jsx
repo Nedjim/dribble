@@ -1,9 +1,11 @@
 import React from 'react';
 
-export default class Date extends React.Component {
+
+export default class Footer extends React.Component {
     render() {
         return (
             <div >
+            footer
             </div>
         );
     }
