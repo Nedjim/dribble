@@ -13,6 +13,7 @@ export default class HeaderMenu extends React.Component {
     search(){
         var url = "https://api.dribbble.com/v1/shots?access_token=36474375a067aa953aa8cf6b9b68278c688ed6be4a75473f575252bfc7b5a1c7";
         Request.get(url).then((data) => {
+            console.log(data);
              this.setState({
                  body: data.body
              });
@@ -33,7 +34,7 @@ export default class HeaderMenu extends React.Component {
                 <div>
                     {contents}
                 </div>
-                <div id="sign">
+                <div id="sign-out">
                     <button>Sign up to continue</button>
                     <div>or sign out</div>
                 </div>
