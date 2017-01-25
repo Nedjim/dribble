@@ -1,5 +1,6 @@
 import React from 'react';
 import Date from './Date.jsx';
+import Description from './Description.jsx';
 
 export default class CreateElement extends React.Component {
     render() {
@@ -7,7 +8,7 @@ export default class CreateElement extends React.Component {
             <div >
                 <div className="box">
                     <p className="title">{this.props.title}</p>
-                    {/*<p>{this.props.description}</p>*/}
+                    <Description description={this.props.description}/>
                     <Date date={this.props.date}/>
                 </div>
                 <img src={this.props.image}/>
