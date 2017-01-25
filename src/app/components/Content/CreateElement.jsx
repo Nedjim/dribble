@@ -13,8 +13,11 @@ export default class CreateElement extends React.Component {
                 </div>
                 <img src={this.props.image}/>
                 <div className="count">
+                    <img src="../../img/eye.png" alt="" />
                     <p className="views">{this.props.viewsCount}</p>
+                    <img src="../../img/chat.png" alt="" />
                     <p className="comments">{this.props.commentsCount}</p>
+                    <img src="../../img/favorite.png" alt="" />
                     <p className="likes">{this.props.likesCount}</p>
                 </div>
             </div>

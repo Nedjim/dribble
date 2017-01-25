@@ -128,7 +128,12 @@ header,
             }
         }
         .count {
-            margin-left: 8rem;
+            margin-left: 3.2rem;
+            img {
+                width: 1rem;
+                margin-right: 0.4rem;
+                margin-top: 1rem;
+            }
             p {
                 display: inline-block;
                 margin-right: 0.5rem;
