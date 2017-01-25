@@ -78,6 +78,10 @@ header {
     }
 }
 
+.button {
+    font-size: 0.8rem;
+}
+
 #sort {
     background: #fafafa;
     div {
@@ -85,8 +89,90 @@ header {
     }
 }
 
+
+/*------------------------------FOOTER---------------------*/
+
 footer {
     background: #ffffff;
     font-size: 0.9rem;
     color: $greyLight;
+}
+
+
+/*------------------------------CONTENT---------------------*/
+
+#contents {
+    .content {
+        background: #ffffff;
+        .box {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: $greyMedium;
+            font-size: 0.9rem;
+            .description {
+                color: $greyLight;
+                font-size: 0.7rem;
+            }
+        }
+        .count p {
+            font-size: 0.7rem;
+            color: $greyLight;
+        }
+    }
+}
+
+
+/*------------------------SIGN OUT------------------------*/
+
+#sign-out {
+    button {
+        background: $pink;
+        color: white;
+        font-size: 0.9rem;
+    }
+    button:hover {
+        @include contrast(90%);
+    }
+    div {
+        color: #5c8bc0;
+        font-size: 0.9rem;
+    }
+    div:hover {
+        color: #0d47a1;
+    }
+}
+
+
+/*---------------------------------FOOTER-----------------------*/
+
+footer {
+    #dribble {
+        p:first-child {
+            font-size: 1rem;
+        }
+    }
+    #list {
+        font-size: 0.8rem;
+    }
+    #jobs {
+        div {
+            p:first-child {
+                color: #3a99da;
+            }
+            p:nth-child(2) {
+                font-size: 0.8rem;
+            }
+        }
+    }
+    #copyright {
+        font-size: 0.8rem;
+    }
+    #contact {
+        div {
+            p:first-child {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: #333333;
+            }
+        }
+    }
 }
