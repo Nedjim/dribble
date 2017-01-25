@@ -110,10 +110,22 @@ header,
     .content {
         background: #ffffff;
         margin: 1rem;
+        padding: 0.5rem;
         .box {
             display: none;
             position: absolute;
             background-color: rgba(255, 255, 255, 0.8);
+            color: $greyMedium;
+            font-size: 0.9rem;
+        }
+        .count {
+            margin-left: 8rem;
+            p {
+                display: inline-block;
+                margin-right: 0.5rem;
+                font-size: 0.7rem;
+                color: $greyLight;
+            }
         }
     }
     .content:hover .box {
